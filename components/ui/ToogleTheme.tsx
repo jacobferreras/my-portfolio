@@ -1,15 +1,11 @@
 "use client";
 import React, { use } from "react";
 import { useState, useEffect } from "react";
+import useToggle from "@/hooks/useToggle";
 
 const ToogleTheme = () => {
-  const [theme, setTheme] = useState(
-    JSON.parse(localStorage.getItem("theme") ?? `{ "theme": "light"  }`)
-  );
+  const { theme, setTheme } = useToggle();
 
-  useEffect(() => {
-    localStorage.setItem("light", JSON.stringify(theme));
-  }, [theme]);
   return (
     <label className="swap swap-rotate">
       {/* this hidden checkbox controls the state */}
