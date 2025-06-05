@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import ToogleTheme from "../ui/ToogleTheme";
 
 const Navbar = () => {
   return (
@@ -30,9 +31,11 @@ const Navbar = () => {
             </label>
           </div>
           <div className="hidden lg:flex w-full justify-center">
-            <ul className="menu menu-horizontal flex justify-center font-semibold  font-body w-full text-white">
+            <ul className="menu menu-horizontal flex justify-center font-semibold  font-body w-full text-base-content">
               <li>
-                <Link href="#home">HOME</Link>
+                <Link href="#home" className="">
+                  HOME
+                </Link>
               </li>
               <li>
                 <Link href="#about">ABOUT</Link>
@@ -47,15 +50,7 @@ const Navbar = () => {
                 <Link href="#contact">CONTACT</Link>
               </li>
 
-              <button className="btn btn-sm bg-blue-800 text-md">
-                {" "}
-                <img
-                  src="/download.png"
-                  alt="download Icon"
-                  className="h-4 w-4"
-                />
-                Resume
-              </button>
+              <ToogleTheme />
             </ul>
           </div>
         </div>
