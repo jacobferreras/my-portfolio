@@ -1,6 +1,5 @@
 "use client";
-import React, { use } from "react";
-import { useState, useEffect } from "react";
+import React from "react";
 import useToggle from "@/hooks/useToggle";
 
 const ToogleTheme = () => {
