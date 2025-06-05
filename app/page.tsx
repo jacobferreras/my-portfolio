@@ -39,7 +39,7 @@ const page = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col gap-y-4">
+          <div className="flex flex-col gap-y-4 ">
             <div className="pl-4">
               <motion.img
                 src="/my_picture.png"
@@ -49,7 +49,7 @@ const page = () => {
                 whileTap={{ scale: 0.95 }}
               />
             </div>
-            <div className="flex flex-row gap-x-4 pl-40">
+            <div className="flex flex-row gap-x-4 justify-center">
               <motion.a
                 href="https://www.linkedin.com/in/jacob-ferreras-516a81273/"
                 target="_blank"
@@ -57,11 +57,7 @@ const page = () => {
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img
-                  src="/linkedin_icon.png"
-                  alt="LinkedIn"
-                  className="w-12 h-12"
-                />
+                <i className="bi bi-linkedin text-3xl"></i>
               </motion.a>
               <motion.a
                 href="https://github.com/jacobferreras"
@@ -70,7 +66,16 @@ const page = () => {
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img src="/github.png" alt="GItHub" className="w-12 h-12" />
+                <i className="bi bi-github text-3xl"></i>
+              </motion.a>
+              <motion.a
+                href="https://github.com/jacobferreras"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="bi bi-instagram text-3xl"></i>
               </motion.a>
             </div>
           </div>
