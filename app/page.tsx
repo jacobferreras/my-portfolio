@@ -6,7 +6,7 @@ import Particles from "@/components/ui/Particles/Particles";
 const page = () => {
   return (
     <>
-      <div className="bg-neutral-900 min-h-screen relative">
+      <div className="bg-base-100 min-h-screen relative">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Particles
             particleColors={["#ffffff", "#ffffff"]}
@@ -26,14 +26,14 @@ const page = () => {
         >
           <div className="flex flex-col">
             <div className="flex flex-row">
-              <h1 className="text-7xl text-white font-bold mr-4 mb-4">
+              <h1 className="text-7xl text-base-content font-bold mr-4 mb-4">
                 Hi! I'm
               </h1>
               <h1 className="text-7xl text-blue-600 font-bold mb-4">
                 Rhobel Jacob Ferreras
               </h1>
             </div>
-            <h2 className="text-5xl text-white font-bold mb-4">
+            <h2 className="text-5xl text-base-content font-bold mb-4">
               <span className="text-blue-600">👋</span>I am a Full Stack
               Developer
             </h2>
