@@ -37,7 +37,19 @@ const page = () => {
               <span className="text-blue-600">👋</span>I am a Full Stack
               Developer
             </h2>
-            <div className="flex flex-row gap-x-4">
+          </div>
+
+          <div className="flex flex-col gap-y-4">
+            <div className="pl-4">
+              <motion.img
+                src="/my_picture.png"
+                alt="My Picture"
+                className="w-auto h-96"
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              />
+            </div>
+            <div className="flex flex-row gap-x-4 pl-40">
               <motion.a
                 href="https://www.linkedin.com/in/jacob-ferreras-516a81273/"
                 target="_blank"
@@ -62,44 +74,34 @@ const page = () => {
               </motion.a>
             </div>
           </div>
-
-          <div className="pl-4">
-            <motion.img
-              src="/my_picture.png"
-              alt="My Picture"
-              className="w-auto h-96"
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-            />
-          </div>
         </section>
 
         <section
           id="about"
           className="flex justify-center items-center z-10 min-h-screen relative"
         >
-          <h1 className="text-3xl text-white">About Page</h1>
+          <h1 className="text-3xl text-base-content">About Me</h1>
         </section>
 
         <section
           id="project"
           className="flex justify-center items-center z-10 min-h-screen relative"
         >
-          <h1 className="text-3xl text-white">About Page</h1>
+          <h1 className="text-3xl text-white">Project Page</h1>
         </section>
 
         <section
           id="skills"
           className="flex justify-center items-center z-10 min-h-screen relative"
         >
-          <h1 className="text-3xl text-white">About Page</h1>
+          <h1 className="text-3xl text-white">Skills Page</h1>
         </section>
 
         <section
           id="contact"
           className="flex justify-center items-center z-10 min-h-screen relative"
         >
-          <h1 className="text-3xl text-white">About Page</h1>
+          <h1 className="text-3xl text-white">Contact Page</h1>
         </section>
       </div>
     </>
