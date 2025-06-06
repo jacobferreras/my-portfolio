@@ -2,12 +2,17 @@
 import { useState, useEffect } from "react";
 
 const useToggle = () => {
-  const [theme, setTheme] = useState(
-    JSON.parse(localStorage.getItem("theme") ?? `{ "theme": "light"  }`)
-  );
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    localStorage.setItem("light", JSON.stringify(theme));
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(JSON.parse(storedTheme));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(theme));
   }, [theme]);
 
   return { theme, setTheme };

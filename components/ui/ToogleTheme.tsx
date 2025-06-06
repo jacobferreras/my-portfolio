@@ -12,7 +12,8 @@ const ToogleTheme = () => {
         type="checkbox"
         className="theme-controller"
         value="light"
-        onChange={() => setTheme(!theme)}
+        checked={theme === "dark"}
+        onChange={() => setTheme(theme === "light" ? "dark" : "light")}
       />
 
       {/* moon icon */}
