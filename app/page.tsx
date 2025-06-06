@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 import Particles from "@/components/ui/Particles/Particles";
 import Card from "@/components/common/Card";
+import ProjectCard from "@/components/common/ProjectCard";
 
 const page = () => {
   return (
@@ -20,15 +21,15 @@ const page = () => {
             disableRotation={false}
           />
         </div>
-
+        {/* Home */}
         <section
           id="home"
-          className="flex justify-center items-center z-10 min-h-screen relative px-12"
+          className="flex justify-center items-center z-10 min-h-screen relative "
         >
           <div className="flex flex-col">
             <div className="flex flex-row">
               <motion.h1
-                className="text-7xl text-base-content font-bold mr-4 mb-4"
+                className="text-6xl text-base-content font-bold mr-4 mb-4"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -36,7 +37,7 @@ const page = () => {
                 Hi! I'm
               </motion.h1>
               <motion.h1
-                className="text-7xl text-blue-600 font-bold mb-4"
+                className="text-6xl text-blue-600 font-bold mb-4"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
@@ -127,13 +128,14 @@ const page = () => {
           </div>
         </section>
 
+        {/* About */}
         <section
           id="about"
-          className="flex justify-center pt-32 z-10 relative gap-12"
+          className="flex justify-center items-center pt-32 z-10 relative gap-28 mb-44"
         >
           <div className="flex flex-col items-start">
             <motion.h1
-              className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-4"
+              className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -181,7 +183,7 @@ const page = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col justify-center  items-center pt-8">
+          <div className="flex flex-col justify-center items-center pt-6">
             <img
               src="/Second_picture.png"
               alt="my second picture"
@@ -193,23 +195,46 @@ const page = () => {
             </div>
 
             <button className="btn bg-blue-600 text-base-content">
-              <i className="bi bi-box-arrow-down text-xl"></i>Download Resume
+              Download Resume<i className="bi bi-box-arrow-down text-xl"></i>
             </button>
           </div>
         </section>
 
+        {/* Projects */}
         <section
           id="project"
-          className="flex justify-center items-center z-10 min-h-screen relative"
+          className="flex justify-center items-center  pt-32 z-10 relative gap-12"
         >
-          <h1 className="text-3xl text-white">Project Page</h1>
+          <div className="flex flex-col items-start">
+            <motion.h1
+              className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              Projects
+            </motion.h1>
+            <div className="flex flex-row gap-4">
+              <ProjectCard />
+              <ProjectCard />
+              <ProjectCard />
+            </div>
+          </div>
         </section>
 
+        {/* Skills */}
         <section
           id="skills"
-          className="flex justify-center items-center z-10 min-h-screen relative"
+          className="flex justify-center items-center pt-32 z-10 relative gap-12"
         >
-          <h1 className="text-3xl text-white">Skills Page</h1>
+          <motion.h1
+            className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Skills
+          </motion.h1>
         </section>
 
         <section
