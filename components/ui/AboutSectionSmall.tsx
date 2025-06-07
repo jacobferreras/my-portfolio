@@ -1,0 +1,58 @@
+import React from "react";
+import { motion } from "motion/react";
+import Card from "@/components/common/Card";
+
+const AboutSectionSmall = () => {
+  return (
+    <div>
+      <section
+        id="about"
+        className="flex  min-h-screen z-10 relative px-4 mb-24"
+      >
+        <div>
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-6xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            About Me
+          </motion.h1>
+          <motion.p
+            className="text-lg sm:text-xl md:text-2xl  text-base-content mt-4 text-justify font-semibold mb-4"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            I am a Full Stack Developer with a passion for creating dynamic and
+            user-friendly web applications. My expertise spans both front-end
+            and back-end technologies, allowing me to build seamless and
+            efficient solutions from concept to deployment. I enjoy learning new
+            tools and frameworks, and I am always eager to take on new
+            challenges that help me grow as a developer.
+          </motion.p>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Card
+              icon="bi bi-mortarboard"
+              title="Education"
+              description="Bachelor of Science in Computer Science"
+              firstInfo="STI San Jose Del Monte Bulacan"
+              secondInfo="2021 - 2025"
+            />
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Card
+              icon="bi bi-briefcase"
+              title="Experience"
+              description="Full Stack Developer Intern"
+              firstInfo="Philippine Coast Guard WCEISC"
+              secondInfo="March 2025 - May 2025"
+            />
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default AboutSectionSmall;
