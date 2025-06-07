@@ -4,6 +4,9 @@ import Particles from "@/components/ui/Particles/Particles";
 import HomeSectionLarge from "@/components/ui/HomeSectionLarge";
 import HomeSectionSmall from "@/components/ui/HomeSectionSmall";
 import AboutSectionLarge from "@/components/ui/AboutSectionLarge";
+import AboutSectionSmall from "@/components/ui/AboutSectionSmall";
+import ProjectSectionLarge from "@/components/ui/ProjectSectionLarge";
+import ProjectSectionSmall from "@/components/ui/ProjectSectionSmall";
 
 const page = () => {
   return (
@@ -31,6 +34,17 @@ const page = () => {
       {/* About */}
       <div className="hidden lg:block">
         <AboutSectionLarge />
+      </div>
+      <div className="flex lg:hidden">
+        <AboutSectionSmall />
+      </div>
+
+      {/* Projects */}
+      <div className="hidden lg:block">
+        <ProjectSectionLarge />
+      </div>
+      <div className="flex lg:hidden">
+        <ProjectSectionSmall />
       </div>
     </div>
   );
