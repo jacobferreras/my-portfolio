@@ -10,7 +10,7 @@ const ProjectSectionSmall = () => {
         className="flex flex-col min-h-screen z-10 relative px-4 mb-24"
       >
         <motion.h1
-          className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
+          className="text-3xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

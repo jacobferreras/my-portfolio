@@ -8,7 +8,7 @@ const ProjectSectionLarge = () => {
       {/* Projects */}
       <section
         id="project"
-        className="flex justify-center min-h-screen items-center pt-32 z-10 relative gap-12"
+        className="flex justify-center items-center pt-32 z-10 relative gap-12"
       >
         <div className="flex flex-col items-start">
           <motion.h1
