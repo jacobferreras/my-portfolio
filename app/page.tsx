@@ -14,7 +14,7 @@ const page = () => {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
-          particleCount={500}
+          particleCount={2000}
           particleSpread={20}
           speed={0.1}
           particleBaseSize={100}
