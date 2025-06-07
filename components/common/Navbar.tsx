@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="drawer-content flex flex-col">
         {/* Large Screen */}
         <div className="navbar bg-transparent backdrop-blur-md fixed top-0 z-20 w-full lg:px-24 font-body pt-4">
-          <div className="flex-none lg:hidden ">
+          <div className="flex flex-row items-center justify-between w-full lg:hidden ">
             <label
               htmlFor="my-drawer-3"
               aria-label="open sidebar"
@@ -29,7 +29,11 @@ const Navbar = () => {
                 ></path>
               </svg>
             </label>
+            <div>
+              <ToogleTheme />
+            </div>
           </div>
+
           <div className="hidden lg:flex w-full justify-center">
             <ul className="menu menu-horizontal flex justify-center font-semibold  font-body w-full text-base-content">
               <li>
@@ -49,7 +53,6 @@ const Navbar = () => {
               <li>
                 <Link href="#contact">CONTACT</Link>
               </li>
-
               <ToogleTheme />
             </ul>
           </div>
