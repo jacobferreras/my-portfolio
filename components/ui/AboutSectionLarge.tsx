@@ -9,7 +9,7 @@ const AboutSectionLarge = () => {
       {/* About */}
       <section
         id="about"
-        className="flex justify-center min-h-screen items-center z-10 relative gap-28 "
+        className="flex justify-center min-h-200 items-center z-10 relative gap-28 "
       >
         <div className="flex flex-col items-start">
           <motion.h1
