@@ -2,10 +2,9 @@ import React from "react";
 import { motion } from "motion/react";
 import ProjectCard from "../common/ProjectCard";
 
-const ProjectSection = () => {
+const ProjectSectionLarge = () => {
   return (
     <div>
-      {" "}
       {/* Projects */}
       <section
         id="project"
@@ -20,7 +19,7 @@ const ProjectSection = () => {
           >
             Projects
           </motion.h1>
-          <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-row gap-4">
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
@@ -31,4 +30,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default ProjectSectionLarge;
