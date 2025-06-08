@@ -1,6 +1,12 @@
 import React from "react";
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+  imageSrc?: string;
+  title?: string;
+  description?: string;
+}
+
+const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div className="card bg-base-200 w-auto lg:w-96 shadow-sm mb-4">
       <figure>
