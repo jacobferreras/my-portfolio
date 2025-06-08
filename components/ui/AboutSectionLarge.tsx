@@ -1,12 +1,11 @@
 import React from "react";
 import { motion } from "motion/react";
 import Card from "@/components/common/Card";
+import Link from "next/link";
 
 const AboutSectionLarge = () => {
   return (
     <div>
-      {" "}
-      {/* About */}
       <section
         id="about"
         className="flex justify-center min-h-200 items-center z-10 relative gap-28 "
@@ -66,9 +65,11 @@ const AboutSectionLarge = () => {
             <div className="badge badge-outline">Gamer</div>
           </div>
 
-          <button className="btn bg-blue-600 text-base-content">
-            Download Resume<i className="bi bi-box-arrow-down text-xl"></i>
-          </button>
+          <Link href="/My_Resume.pdf" target="_blank">
+            <button className="btn bg-blue-600 text-base-content">
+              Download Resume<i className="bi bi-box-arrow-down text-xl"></i>
+            </button>
+          </Link>
         </div>
       </section>
     </div>
