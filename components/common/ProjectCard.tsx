@@ -1,30 +1,74 @@
 import React from "react";
+import useProject from "@/hooks/useProject";
+import Link from "next/link";
 
-interface ProjectCardProps {
-  imageSrc?: string;
-  title?: string;
-  description?: string;
-}
+type Project = {
+  id: number;
+  imageUrl: string;
+  title: string;
+  description: string;
+  technology1: string;
+  technology2: string;
+  technology3: string;
+  technology4: string;
+  liveDemoUrl: string;
+  githubUrl: string;
+};
 
-const ProjectCard = (props: ProjectCardProps) => {
+const ProjectCard = () => {
+  const { project } = useProject() as { project: Project[] };
+
+  if (project.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="card bg-base-200 w-auto lg:w-96 shadow-sm mb-4">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">Card Title</h2>
-        <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
-        </p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+    <div className="flex flex-row gap-4">
+      {project.map((projects, index) => (
+        <div
+          className="card bg-base-200 w-auto lg:w-96 shadow-sm mb-4"
+          key={projects.id ?? index}
+        >
+          <figure>
+            <img src={projects.imageUrl} alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">{projects.title}</h2>
+            <p>{projects.description}</p>
+            <div className="flex flex-row gap-2">
+              <div className="badge badge-neutral">{projects.technology1}</div>
+              <div className="badge badge-neutral">{projects.technology2}</div>
+              <div className="badge badge-neutral">{projects.technology3}</div>
+              <div className="badge badge-neutral">{projects.technology4}</div>
+            </div>
+
+            <div className="flex flex-row gap-2 card-actions justify-start">
+              {projects.githubUrl && (
+                <Link
+                  href={projects.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn bg-base-300 rounded-xl">
+                    <i className="bi bi-github"></i>GitHub
+                  </button>
+                </Link>
+              )}
+              {projects.liveDemoUrl && (
+                <Link
+                  href={projects.liveDemoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn bg-base-300 rounded-xl">
+                    <i className="bi bi-globe"></i>Live Demo
+                  </button>
+                </Link>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };

@@ -21,8 +21,6 @@ const ProjectSectionLarge = () => {
           </motion.h1>
           <div className="flex flex-row gap-4">
             <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
           </div>
         </div>
       </section>
