@@ -8,9 +8,9 @@ const AboutSectionLarge = () => {
     <div>
       <section
         id="about"
-        className="flex justify-center min-h-200 items-center z-10 relative gap-28 "
+        className="flex flex-col px-4 xl:flex-row justify-center min-h-200 items-center z-10 relative xl:gap-28 "
       >
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col">
           <motion.h1
             className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
             initial={{ opacity: 0, y: -50 }}
@@ -33,7 +33,7 @@ const AboutSectionLarge = () => {
             tools and frameworks, and I am always eager to take on new
             challenges that help me grow as a developer.
           </motion.p>
-          <div className="flex flex-row gap-4 mt-4">
+          <div className="flex flex-col lg:flex-row gap-4 mt-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Card
                 icon="bi bi-mortarboard"
@@ -54,11 +54,12 @@ const AboutSectionLarge = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center pt-6">
+
+        <div className="flex flex-col justify-center items-center xl:pt-6">
           <img
             src="/Second_picture.png"
             alt="my second picture"
-            className="w-full h-76 pt-8"
+            className="w-full h-76"
           />
           <div className="flex flex-row gap-4 my-4">
             <div className="badge badge-outline">Developer</div>
