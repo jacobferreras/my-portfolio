@@ -8,11 +8,11 @@ const ProjectSectionLarge = () => {
       {/* Projects */}
       <section
         id="project"
-        className="flex justify-center px-4 items-center pt-32 z-10 relative gap-12"
+        className="flex justify-center px-4 py-14 min-h-208 items-center z-10 relative gap-12"
       >
         <div className="flex flex-col items-start">
           <motion.h1
-            className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
+            className="text-4xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
