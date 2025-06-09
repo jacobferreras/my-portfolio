@@ -23,7 +23,7 @@ const ProjectCard = () => {
   }
 
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-col justify-center lg:flex-row gap-4">
       {project.map((projects, index) => (
         <div
           className="card bg-base-200 w-auto lg:w-96 shadow-sm mb-4"
@@ -35,8 +35,8 @@ const ProjectCard = () => {
           <div className="card-body">
             <h2 className="card-title">{projects.title}</h2>
             <p>{projects.description}</p>
-            <div className="flex flex-row gap-2">
-              <div className="badge badge-neutral">{projects.technology1}</div>
+            <div className="card-actions justify-starv">
+              <div className="badge badge-neutral ">{projects.technology1}</div>
               <div className="badge badge-neutral">{projects.technology2}</div>
               <div className="badge badge-neutral">{projects.technology3}</div>
               <div className="badge badge-neutral">{projects.technology4}</div>
