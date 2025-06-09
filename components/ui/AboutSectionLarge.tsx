@@ -8,7 +8,7 @@ const AboutSectionLarge = () => {
     <div>
       <section
         id="about"
-        className="flex flex-col px-4 lg:flex-row lg:gap-4 justify-center min-h-200 items-center z-10 relative xl:gap-28 "
+        className="flex flex-col lg:flex-row lg:gap-4 justify-center min-h-200 items-center z-10 relative xl:gap-28 "
       >
         <div className="flex flex-col">
           <motion.h1
@@ -67,9 +67,13 @@ const AboutSectionLarge = () => {
           </div>
 
           <Link href="/Jacob Ferreras.pdf" target="_blank">
-            <button className="btn bg-blue-600 text-base-content">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn bg-blue-600 text-base-content"
+            >
               Download Resume<i className="bi bi-box-arrow-down text-xl"></i>
-            </button>
+            </motion.button>
           </Link>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import React from "react";
 import useProject from "@/hooks/useProject";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 type Project = {
   id: number;
@@ -25,7 +26,9 @@ const ProjectCard = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-center">
       {project.map((projects, index) => (
-        <div
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           className="card bg-base-200 w-auto  xl:w-96 shadow-sm mb-4"
           key={projects.id ?? index}
         >
@@ -42,14 +45,14 @@ const ProjectCard = () => {
               <div className="badge badge-neutral">{projects.technology4}</div>
             </div>
 
-            <div className="flex flex-row gap-2 card-actions justify-start">
+            <div className="flex flex-row gap-2 card-actions justify-start ">
               {projects.githubUrl && (
                 <Link
                   href={projects.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="btn bg-base-300 rounded-xl">
+                  <button className="btn bg-base-300 rounded-xl hover:bg-base-100">
                     <i className="bi bi-github"></i>GitHub
                   </button>
                 </Link>
@@ -60,14 +63,14 @@ const ProjectCard = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="btn bg-base-300 rounded-xl">
+                  <button className="btn bg-base-300 rounded-xl hover:bg-base-100">
                     <i className="bi bi-globe"></i>Live Demo
                   </button>
                 </Link>
               )}
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
