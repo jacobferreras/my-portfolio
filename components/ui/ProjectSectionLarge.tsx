@@ -19,7 +19,7 @@ const ProjectSectionLarge = () => {
           >
             Projects
           </motion.h1>
-          <div className="flex flex-row gap-4">
+          <div>
             <ProjectCard />
           </div>
         </div>
