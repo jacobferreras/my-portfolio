@@ -7,12 +7,12 @@ const HomeSectionLarge = () => {
       {/* Home */}
       <section
         id="home"
-        className="flex justify-center items-center z-10 min-h-screen relative "
+        className="flex flex-col lg:flex-row justify-center items-center z-10 min-h-screen relative"
       >
-        <div className=" hidden lg:flex lg:flex-col">
-          <div className=" lg:flex lg:flex-row">
+        <div className="flex flex-col xl:mr-4">
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:mb-4">
             <motion.h1
-              className="text-lg lg:text-6xl text-base-content font-bold lg:mr-4 lg:mb-4"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-base-content font-bold mr-2"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -20,7 +20,7 @@ const HomeSectionLarge = () => {
               Hi! I'm
             </motion.h1>
             <motion.h1
-              className="text-lg lg:text-6xl text-blue-600 font-bold mb-4"
+              className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl text-blue-600 font-bold"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -29,9 +29,9 @@ const HomeSectionLarge = () => {
             </motion.h1>
           </div>
 
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-row gap-2 md:gap-4">
             <motion.h2
-              className="text-md lg:text-5xl text-base-content font-bold lg:mb-4 "
+              className="text-xl sm:text-4xl xl:text-5xl text-base-content font-bold lg:mb-4 "
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -47,7 +47,7 @@ const HomeSectionLarge = () => {
               I am a
             </motion.h2>
             <motion.h2
-              className="text-md lg:text-5xl text-base-content font-bold mb-4 underline decoration-blue-600 decoration-4"
+              className="text-xl sm:text-4xl xl:text-5xl text-base-content font-bold mb-4 underline decoration-blue-600 decoration-4"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -58,11 +58,11 @@ const HomeSectionLarge = () => {
         </div>
 
         <div className="flex flex-col gap-y-4 ">
-          <div className="pl-4">
+          <div className="">
             <motion.img
               src="/my_picture.png"
               alt="My Picture"
-              className="w-auto h-auto lg:h-86"
+              className="max-w-72 h-72 md:h-auto md:max-w-86 rounded-full shadow-lg "
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}

@@ -2,7 +2,6 @@
 import React from "react";
 import Particles from "@/components/ui/Particles/Particles";
 import HomeSectionLarge from "@/components/ui/HomeSectionLarge";
-import HomeSectionSmall from "@/components/ui/HomeSectionSmall";
 import AboutSectionLarge from "@/components/ui/AboutSectionLarge";
 import AboutSectionSmall from "@/components/ui/AboutSectionSmall";
 import ProjectSectionLarge from "@/components/ui/ProjectSectionLarge";
@@ -24,11 +23,8 @@ const page = () => {
         />
       </div>
       {/* Home */}
-      <div className="hidden lg:block">
+      <div className="justify-center items-center">
         <HomeSectionLarge />
-      </div>
-      <div className="flex lg:hidden justify-center">
-        <HomeSectionSmall />
       </div>
 
       {/* About */}
