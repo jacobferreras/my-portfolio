@@ -23,7 +23,7 @@ const page = () => {
         />
       </div>
       {/* Home */}
-      <div className="justify-center items-center">
+      <div className="justify-center items-center max-w-7xl mx-auto">
         <HomeSectionLarge />
       </div>
 
