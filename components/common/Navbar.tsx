@@ -75,7 +75,7 @@ const Navbar = () => {
               <Link href="#about">ABOUT</Link>
             </li>
             <li>
-              <Link href="#projects">PROJECTS</Link>
+              <Link href="#project">PROJECTS</Link>
             </li>
             <li>
               <Link href="#skills">SKILLS</Link>
