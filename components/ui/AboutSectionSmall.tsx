@@ -21,7 +21,7 @@ const AboutSectionSmall = () => {
           </motion.h1>
 
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl  text-base-content mt-4 text-justify font-semibold mb-4"
+            className="text-lg sm:text-xl md:text-xl  text-base-content mt-4 text-justify font-semibold mb-4"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -54,11 +54,13 @@ const AboutSectionSmall = () => {
             />
           </motion.div>
 
-          <img
-            src="/Second_picture.png"
-            alt="my second picture"
-            className="w-full h-auto lg:h-76"
-          />
+          <div className="flex justify-center">
+            <img
+              src="/Second_picture.png"
+              alt="my second picture"
+              className="w-76 h-76 lg:h-76 justify-center"
+            />
+          </div>
 
           <div className="flex flex-row gap-4 my-4 justify-center">
             <div className="badge badge-outline">Developer</div>
