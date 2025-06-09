@@ -8,11 +8,11 @@ const AboutSectionLarge = () => {
     <div>
       <section
         id="about"
-        className="flex flex-col lg:flex-row lg:gap-4 justify-center min-h-200 items-center z-10 relative xl:gap-28 "
+        className="flex flex-col lg:gap-4 px-4 py-14 lg:justify-center min-h-200 lg:items-center z-10 relative lg:flex-row xl:gap-34 "
       >
         <div className="flex flex-col">
           <motion.h1
-            className="text-5xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
+            className="text-4xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-4"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -21,7 +21,7 @@ const AboutSectionLarge = () => {
           </motion.h1>
 
           <motion.p
-            className="text-lg text-base-content mt-4 max-w-2xl text-justify font-semibold"
+            className="text-lg text-base-content mt-4 max-w-2xl xl:max-w-4xl text-justify font-light"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -33,7 +33,7 @@ const AboutSectionLarge = () => {
             tools and frameworks, and I am always eager to take on new
             challenges that help me grow as a developer.
           </motion.p>
-          <div className="flex flex-col lg:flex-row gap-4 mt-4">
+          <div className="flex flex-col md:flex-row gap-4 mt-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Card
                 icon="bi bi-mortarboard"
@@ -59,7 +59,7 @@ const AboutSectionLarge = () => {
           <img
             src="/Second_picture.png"
             alt="my second picture"
-            className="w-full h-76 lg:h-64"
+            className="w-full h-76 md:w-auto lg:h-64"
           />
           <div className="flex flex-row gap-4 my-4">
             <div className="badge badge-outline">Developer</div>

@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card = (props: CardProps) => {
   return (
-    <div className="card w-auto lg:w-96 bg-base-200 card-lg shadow-sm mb-4">
+    <div className="card w-auto md:w-90 md:h-50 lg:w-96 xl:w-104 bg-base-200 card-lg shadow-sm mb-4">
       <div className="card-body">
         <div className="flex flex-row gap-4">
           {props.icon && <i className={`${props.icon} text-2xl`}></i>}
