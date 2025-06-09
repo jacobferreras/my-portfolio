@@ -8,7 +8,7 @@ const AboutSectionLarge = () => {
     <div>
       <section
         id="about"
-        className="flex flex-col px-4 xl:flex-row justify-center min-h-200 items-center z-10 relative xl:gap-28 "
+        className="flex flex-col px-4 lg:flex-row lg:gap-4 justify-center min-h-200 items-center z-10 relative xl:gap-28 "
       >
         <div className="flex flex-col">
           <motion.h1
@@ -55,11 +55,11 @@ const AboutSectionLarge = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center xl:pt-6">
+        <div className="flex flex-col justify-center items-center lg:pt-16">
           <img
             src="/Second_picture.png"
             alt="my second picture"
-            className="w-full h-76"
+            className="w-full h-76 lg:h-64"
           />
           <div className="flex flex-row gap-4 my-4">
             <div className="badge badge-outline">Developer</div>
