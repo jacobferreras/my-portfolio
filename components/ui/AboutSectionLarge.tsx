@@ -65,7 +65,7 @@ const AboutSectionLarge = () => {
             <div className="badge badge-outline">Gamer</div>
           </div>
 
-          <Link href="/My_Resume.pdf" target="_blank">
+          <Link href="/Jacob Ferreras.pdf" target="_blank">
             <button className="btn bg-blue-600 text-base-content">
               Download Resume<i className="bi bi-box-arrow-down text-xl"></i>
             </button>

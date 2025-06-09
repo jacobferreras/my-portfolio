@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "motion/react";
 import Card from "@/components/common/Card";
+import Link from "next/link";
 
 const AboutSectionSmall = () => {
   return (
     <div>
       <section
         id="about"
-        className="flex  min-h-screen z-10 relative px-4 mb-24"
+        className="flex min-h-screen z-10 relative px-4 mb-24"
       >
         <div>
           <motion.h1
@@ -18,6 +19,7 @@ const AboutSectionSmall = () => {
           >
             About Me
           </motion.h1>
+
           <motion.p
             className="text-lg sm:text-xl md:text-2xl  text-base-content mt-4 text-justify font-semibold mb-4"
             initial={{ opacity: 0, y: -50 }}
@@ -31,6 +33,7 @@ const AboutSectionSmall = () => {
             tools and frameworks, and I am always eager to take on new
             challenges that help me grow as a developer.
           </motion.p>
+
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Card
               icon="bi bi-mortarboard"
@@ -40,6 +43,7 @@ const AboutSectionSmall = () => {
               secondInfo="2021 - 2025"
             />
           </motion.div>
+
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Card
               icon="bi bi-briefcase"
@@ -49,6 +53,25 @@ const AboutSectionSmall = () => {
               secondInfo="March 2025 - May 2025"
             />
           </motion.div>
+
+          <img
+            src="/Second_picture.png"
+            alt="my second picture"
+            className="w-full h-auto lg:h-76"
+          />
+
+          <div className="flex flex-row gap-4 my-4 justify-center">
+            <div className="badge badge-outline">Developer</div>
+            <div className="badge badge-outline">Gamer</div>
+          </div>
+
+          <div className="flex justify-center mt-4">
+            <Link href="/Jacob Ferreras.pdf" target="_blank">
+              <button className="btn bg-blue-600 text-base-content">
+                Download Resume<i className="bi bi-box-arrow-down text-xl"></i>
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
