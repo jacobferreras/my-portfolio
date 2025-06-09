@@ -96,7 +96,7 @@ const HomeSectionLarge = () => {
               <i className="bi bi-github text-3xl"></i>
             </motion.a>
             <motion.a
-              href="https://github.com/jacobferreras"
+              href="https://www.instagram.com/itsme_jacobzxc/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.08 }}
