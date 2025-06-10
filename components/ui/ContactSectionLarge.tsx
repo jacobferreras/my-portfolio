@@ -30,7 +30,7 @@ const ContactSectionLarge = () => {
               transition={{ duration: 1 }}
             >
               Have a question or want to work together? Feel free to drop me a
-              message. I'd love to hear from you!
+              message. I&apos;d love to hear from you!
             </motion.p>
           </div>
 
@@ -57,7 +57,7 @@ const ContactSectionLarge = () => {
                   <span className="hidden md:inline">
                     <br />
                   </span>
-                  and I'll get back to you
+                  and I&apos;ll get back to you
                   <span className="hidden md:inline">
                     <br />
                   </span>

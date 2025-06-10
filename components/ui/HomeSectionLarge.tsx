@@ -19,7 +19,7 @@ const HomeSectionLarge = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              Hi! I'm
+              Hi! I&apos;m
             </motion.h1>
             <motion.h1
               className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl text-blue-600 font-bold"
