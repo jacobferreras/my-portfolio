@@ -13,7 +13,7 @@ export async function GET() {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin":
-          "https://my-portfolio-jtl9hd4ye-jacob-ferreras-projects.vercel.app",
+          "https://my-portfolio-five-roan-50.vercel.app",
       },
     });
   } catch (error) {
@@ -22,7 +22,7 @@ export async function GET() {
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin":
-          "https://my-portfolio-jtl9hd4ye-jacob-ferreras-projects.vercel.app",
+          "https://my-portfolio-five-roan-50.vercel.app",
       },
     });
   }
