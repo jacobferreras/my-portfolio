@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const useToggle = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("lofi");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
