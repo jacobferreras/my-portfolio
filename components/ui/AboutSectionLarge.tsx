@@ -94,7 +94,12 @@ const AboutSectionLarge = () => {
             </motion.div>
           </div>
 
-          <Link href="/Jacob Ferreras.pdf" target="_blank" className="pb-6">
+          <Link
+            href="/Jacob Ferreras.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pb-6"
+          >
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
