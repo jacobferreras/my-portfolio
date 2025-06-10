@@ -6,6 +6,7 @@ import AboutSectionLarge from "@/components/ui/AboutSectionLarge";
 import ProjectSectionLarge from "@/components/ui/ProjectSectionLarge";
 import SkillsSectionLarge from "@/components/ui/SkillsSectionLarge";
 import ContactSectionLarge from "@/components/ui/ContactSectionLarge";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const page = () => {
   return (
