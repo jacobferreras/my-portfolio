@@ -29,7 +29,7 @@ const ProjectCard = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="card bg-base-200 w-auto xl:w-100 shadow-sm mb-4"
+          className="card bg-base-200 w-auto xl:w-100 mb-4 shadow-md shadow-blue-500/50 hover:shadow-x transition-shadow duration-300 ease-in-out"
           key={projects.id ?? index}
         >
           <figure>
@@ -39,7 +39,7 @@ const ProjectCard = () => {
             <h2 className="card-title">{projects.title}</h2>
             <p>{projects.description}</p>
             <div className="card-actions justify-start">
-              <div className="badge badge-neutral ">{projects.technology1}</div>
+              <div className="badge badge-neutral">{projects.technology1}</div>
               <div className="badge badge-neutral">{projects.technology2}</div>
               <div className="badge badge-neutral">{projects.technology3}</div>
               <div className="badge badge-neutral">{projects.technology4}</div>
