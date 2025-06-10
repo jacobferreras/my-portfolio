@@ -10,11 +10,20 @@ export async function GET() {
     });
     return new Response(JSON.stringify(projects), {
       status: 200,
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":
+          "https://my-portfolio-five-roan-50.vercel.app/",
+      },
     });
   } catch (error) {
     return new Response(JSON.stringify({ error: String(error) }), {
       status: 500,
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":
+          "https://my-portfolio-five-roan-50.vercel.app/",
+      },
     });
   }
 }
