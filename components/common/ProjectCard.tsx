@@ -24,12 +24,17 @@ const ProjectCard = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8 justify-center">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8 justify-center"
+    >
       {project.map((projects, index) => (
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="card bg-base-200 w-auto xl:w-100 mb-4 shadow-md shadow-blue-500/50 hover:shadow-x transition-shadow duration-300 ease-in-out"
+          className="card bg-base-200 w-auto xl:w-100 mb-4 shadow-md shadow-blue-500/50 hover:shadow-xl transition-shadow duration-300 ease-in-out"
           key={projects.id ?? index}
         >
           <figure>
@@ -72,7 +77,7 @@ const ProjectCard = () => {
           </div>
         </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
