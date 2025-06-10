@@ -99,21 +99,21 @@ const ContactSectionLarge = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bi bi-github text-3xl"></i>
+                  <i className="bi bi-github text-3xl hover:text-blue-500"></i>
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/jacob-ferreras-516a81273/ "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bi bi-linkedin text-3xl"></i>
+                  <i className="bi bi-linkedin text-3xl hover:text-blue-500"></i>
                 </Link>
                 <Link
                   href="https://www.instagram.com/itsme_jacobzxc/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bi bi-instagram text-3xl"></i>
+                  <i className="bi bi-instagram text-3xl hover:text-blue-500"></i>
                 </Link>
               </div>
             </div>
