@@ -8,18 +8,23 @@ const SkillsSectionLarge = () => {
       {/* Skills*/}
       <section
         id="skills"
-        className="flex flex-col px-4 py-14 min-h-200 z-10 relative gap-12 mb-8 lg:items-center lg:justify-center"
+        className="flex flex-col px-4 py-14 min-h-screen z-10 relative gap-12 mb-8 lg:items-center lg:justify-center"
       >
         <div>
           <motion.h1
             className="text-4xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
             Skills
           </motion.h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4"
+          >
             <SkillsCard
               title="Programming Languages"
               logo="bi bi-terminal"
@@ -58,7 +63,7 @@ const SkillsSectionLarge = () => {
               badge2="GitHub"
               badge3="Docker"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

@@ -8,10 +8,9 @@ const AboutSectionLarge = () => {
     <div>
       <motion.section
         id="about"
-        className="flex flex-col lg:gap-4 px-4 py-14 lg:justify-center min-h-200 lg:items-center z-10 relative lg:flex-row xl:gap-34 "
+        className="flex flex-col lg:gap-4 px-4 py-18 lg:justify-center min-h-screen lg:items-center z-10 relative lg:flex-row xl:gap-34 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
       >
         <div className="flex flex-col">
           <motion.h1
@@ -24,7 +23,7 @@ const AboutSectionLarge = () => {
           </motion.h1>
 
           <motion.p
-            className="text-lg text-base-content mt-4 max-w-2xl xl:max-w-4xl text-justify font-light"
+            className="text-lg text-base-content mt-4 max-w-2xl xl:max-w-4xl text-justify font-normal"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -42,7 +41,7 @@ const AboutSectionLarge = () => {
             transition={{ duration: 1 }}
             className="flex flex-col md:flex-row gap-4 mt-4"
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div>
               <Card
                 icon="bi bi-mortarboard"
                 title="Education"
@@ -51,7 +50,7 @@ const AboutSectionLarge = () => {
                 secondInfo="2021 - 2025"
               />
             </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div>
               <Card
                 icon="bi bi-briefcase"
                 title="Experience"

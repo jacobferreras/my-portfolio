@@ -5,16 +5,18 @@ const HomeSectionLarge = () => {
   return (
     <div>
       {/* Home */}
-      <section
+      <motion.section
         id="home"
         className="flex flex-col lg:flex-row justify-center items-center z-10 min-h-screen relative"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
       >
         <div className="flex flex-col xl:mr-4">
           <div className="flex flex-col lg:flex-row justify-center items-center lg:mb-4">
             <motion.h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-base-content font-bold mr-2"
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               Hi! I'm
@@ -22,7 +24,7 @@ const HomeSectionLarge = () => {
             <motion.h1
               className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl text-blue-600 font-bold"
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               Rhobel Jacob Ferreras
@@ -33,13 +35,13 @@ const HomeSectionLarge = () => {
             <motion.h2
               className="text-xl sm:text-4xl xl:text-5xl text-base-content font-bold lg:mb-4 "
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               <motion.span
                 className="text-blue-600 "
                 initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
                 👋
@@ -49,7 +51,7 @@ const HomeSectionLarge = () => {
             <motion.h2
               className="text-xl sm:text-4xl xl:text-5xl text-base-content font-bold mb-4 underline decoration-blue-600 decoration-4"
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               Full Stack Developer
@@ -62,54 +64,65 @@ const HomeSectionLarge = () => {
             <motion.img
               src="/my_picture.png"
               alt="My Picture"
-              className="max-w-72 h-72 md:h-auto md:max-w-86 rounded-full shadow-md"
+              className="max-w-72 h-72 md:h-auto md:max-w-86 rounded-full"
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             />
           </div>
           <div className="flex flex-row gap-x-4 justify-center">
-            <motion.a
-              href="https://www.linkedin.com/in/jacob-ferreras-516a81273/"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <i className="bi bi-linkedin text-3xl hover:text-blue-500"></i>
-            </motion.a>
-            <motion.a
-              href="https://github.com/jacobferreras"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              <motion.a
+                href="https://www.linkedin.com/in/jacob-ferreras-516a81273/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="bi bi-linkedin text-3xl hover:text-blue-500"></i>
+              </motion.a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <i className="bi bi-github text-3xl hover:text-blue-500"></i>
-            </motion.a>
-            <motion.a
-              href="https://www.instagram.com/itsme_jacobzxc/"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              <motion.a
+                href="https://github.com/jacobferreras"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="bi bi-github text-3xl hover:text-blue-500"></i>
+              </motion.a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <i className="bi bi-instagram text-3xl hover:text-blue-500"></i>
-            </motion.a>
+              <motion.a
+                href="https://www.instagram.com/itsme_jacobzxc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="bi bi-instagram text-3xl hover:text-blue-500"></i>
+              </motion.a>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

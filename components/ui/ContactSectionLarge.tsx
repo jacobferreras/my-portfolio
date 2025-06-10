@@ -15,7 +15,7 @@ const ContactSectionLarge = () => {
             <motion.h1
               className="text-4xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-8"
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               Get in Touch
@@ -24,9 +24,9 @@ const ContactSectionLarge = () => {
 
           <div className="mb-8">
             <motion.p
-              className="text-lg text-base-content  max-w-2xl text-justify font-light"
+              className="text-lg text-base-content  max-w-2xl text-justify font-normal"
               initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
               Have a question or want to work together? Feel free to drop me a
@@ -40,7 +40,7 @@ const ContactSectionLarge = () => {
                 <motion.h2
                   className="text-xl text-base-content font-bold flex mb-4"
                   initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
                   Contact Information
@@ -50,7 +50,7 @@ const ContactSectionLarge = () => {
                 <motion.p
                   className="text-lg text-base-content max-w-2xl text-justify font-light"
                   initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
                   Fill up the form
@@ -65,7 +65,12 @@ const ContactSectionLarge = () => {
                 </motion.p>
               </div>
 
-              <div className="flex flex-col gap-2 pt-4 mb-4">
+              <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="flex flex-col gap-2 pt-4 mb-4"
+              >
                 <h1 className="text-lg text-base-content font-bold">
                   <i className="bi bi-envelope mr-2"></i>Email
                 </h1>
@@ -80,20 +85,25 @@ const ContactSectionLarge = () => {
                   <i className="bi bi-geo-alt mr-2"></i>Location
                 </h1>
                 <p className="">+63 953 378 5109</p>
-              </div>
+              </motion.div>
 
               <div>
                 <motion.h2
                   className="text-xl text-base-content font-bold flex mb-4"
                   initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
                   Connect with me
                 </motion.h2>
               </div>
 
-              <div className="flex flex-row gap-4 mb-4">
+              <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="flex flex-row gap-4 mb-4"
+              >
                 <Link
                   href="https://github.com/jacobferreras"
                   target="_blank"
@@ -115,12 +125,16 @@ const ContactSectionLarge = () => {
                 >
                   <i className="bi bi-instagram text-3xl hover:text-blue-500"></i>
                 </Link>
-              </div>
+              </motion.div>
             </div>
 
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               <Fieldset />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
