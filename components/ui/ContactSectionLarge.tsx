@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Fieldset from "../common/Fieldset";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const ContactSectionLarge = () => {
   return (

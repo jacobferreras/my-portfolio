@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import SkillsCard from "../common/SkillsCard";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const SkillsSectionLarge = () => {
   return (

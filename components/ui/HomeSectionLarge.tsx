@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const HomeSectionLarge = () => {
   return (

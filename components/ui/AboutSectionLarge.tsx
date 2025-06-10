@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Card from "@/components/common/Card";
 import Link from "next/link";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AboutSectionLarge = () => {
   return (
