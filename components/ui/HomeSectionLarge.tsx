@@ -62,7 +62,7 @@ const HomeSectionLarge = () => {
             <motion.img
               src="/my_picture.png"
               alt="My Picture"
-              className="max-w-72 h-72 md:h-auto md:max-w-86 rounded-full shadow-lg "
+              className="max-w-72 h-72 md:h-auto md:max-w-86 rounded-full shadow-md"
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ const HomeSectionLarge = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <i className="bi bi-linkedin text-3xl"></i>
+              <i className="bi bi-linkedin text-3xl hover:text-blue-500"></i>
             </motion.a>
             <motion.a
               href="https://github.com/jacobferreras"
@@ -93,7 +93,7 @@ const HomeSectionLarge = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <i className="bi bi-github text-3xl"></i>
+              <i className="bi bi-github text-3xl hover:text-blue-500"></i>
             </motion.a>
             <motion.a
               href="https://www.instagram.com/itsme_jacobzxc/"
@@ -105,7 +105,7 @@ const HomeSectionLarge = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              <i className="bi bi-instagram text-3xl"></i>
+              <i className="bi bi-instagram text-3xl hover:text-blue-500"></i>
             </motion.a>
           </div>
         </div>
