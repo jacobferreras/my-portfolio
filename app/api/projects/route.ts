@@ -12,8 +12,7 @@ export async function GET() {
       status: 200,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":
-          "https://my-portfolio-five-roan-50.vercel.app",
+        "Access-Control-Allow-Origin": "https://www.rhobeljacobferreras.tech",
       },
     });
   } catch (error) {
@@ -21,8 +20,7 @@ export async function GET() {
       status: 500,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":
-          "https://my-portfolio-five-roan-50.vercel.app",
+        "Access-Control-Allow-Origin": "https://www.rhobeljacobferreras.tech",
       },
     });
   }
