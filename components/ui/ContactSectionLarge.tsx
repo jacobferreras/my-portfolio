@@ -85,7 +85,7 @@ const ContactSectionLarge = () => {
                 <h1 className="text-lg text-base-content font-bold">
                   <i className="bi bi-geo-alt mr-2"></i>Location
                 </h1>
-                <p className="">+63 953 378 5109</p>
+                <p className="">Bulacan, Philippines</p>
               </motion.div>
 
               <div>
