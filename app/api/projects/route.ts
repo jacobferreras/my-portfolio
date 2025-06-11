@@ -9,9 +9,14 @@ const allowedOrigins = [
 
 export async function GET(request: Request) {
   const origin = request.headers.get("origin") || "";
-  const corsOrigin = allowedOrigins.includes(origin || "")
-    ? origin
-    : allowedOrigins[0];
+
+  const corsHeaders: Record<string, string> = {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+  };
+  if (allowedOrigins.includes(origin)) {
+    corsHeaders["Access-Control-Allow-Origin"] = origin;
+  }
 
   try {
     const projects = await prisma.project.findMany({
@@ -21,20 +26,12 @@ export async function GET(request: Request) {
     });
     return new Response(JSON.stringify(projects), {
       status: 200,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": corsOrigin,
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-      },
+      headers: corsHeaders,
     });
   } catch (error) {
     return new Response(JSON.stringify({ error: String(error) }), {
       status: 500,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": corsOrigin,
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-      },
+      headers: corsHeaders,
     });
   }
 }
