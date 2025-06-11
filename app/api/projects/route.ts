@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 const allowedOrigins = [
   "https://www.rhobeljacobferreras.tech",
-  "https://rhobeljacobferreras.tech",
+  "https://rhobeljacobferreras.tech/",
   "http://localhost:3000",
 ];
 
