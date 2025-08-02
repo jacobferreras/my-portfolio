@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import useProject from "@/hooks/useProject";
 import Link from "next/link";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 type Project = {
   id: number;
