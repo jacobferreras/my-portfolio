@@ -96,7 +96,7 @@ const AboutSectionLarge = () => {
           </div>
 
           <Link
-            href="/Rhobel Jacob Ferreras.pdf"
+            href="/Jacob Ferreras.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="pb-6"
