@@ -57,26 +57,26 @@ const ProjectCard = () => {
             <h2 className="card-title">{projects.title}</h2>
             <p>{projects.description}</p>
             <div className="card-actions justify-start">
-              <div className="badge badge-neutral">
-                {projects.technology1 ? (
-                  <span>{projects.technology1}</span>
-                ) : null}
-              </div>
-              <div className="badge badge-neutral">
-                {projects.technology2 ? (
-                  <span>{projects.technology2}</span>
-                ) : null}
-              </div>
-              <div className="badge badge-neutral">
-                {projects.technology3 ? (
-                  <span>{projects.technology3}</span>
-                ) : null}
-              </div>
-              <div className="badge badge-neutral">
-                {projects.technology4 ? (
-                  <span>{projects.technology4}</span>
-                ) : null}
-              </div>
+              {projects.technology1 && (
+                <div className="badge badge-neutral">
+                  {projects.technology1}
+                </div>
+              )}
+              {projects.technology2 && (
+                <div className="badge badge-neutral">
+                  {projects.technology2}
+                </div>
+              )}
+              {projects.technology3 && (
+                <div className="badge badge-neutral">
+                  {projects.technology3}
+                </div>
+              )}
+              {projects.technology4 && (
+                <div className="badge badge-neutral">
+                  {projects.technology4}
+                </div>
+              )}
             </div>
 
             <div className="flex flex-row gap-2 card-actions justify-start ">
