@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import useProject from "@/hooks/useProject";
 import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -18,8 +16,17 @@ type Project = {
   githubUrl: string;
 };
 
-const ProjectCard = () => {
-  const { project } = useProject() as { project: Project[] };
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+const ProjectCard = async () => {
+  const response = await fetch(`${API_URL}`);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch projects");
+  }
+  const project: Project[] = await response.json();
+
+  console.log(project);
 
   return (
     <motion.div
@@ -36,7 +43,14 @@ const ProjectCard = () => {
           key={projects.id ?? index}
         >
           <figure>
-            <img src={projects.imageUrl} alt="Shoes" />
+            <Image
+              src={projects.imageUrl}
+              alt="Shoes"
+              layout="responsive"
+              width={500}
+              height={300}
+              priority
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{projects.title}</h2>
