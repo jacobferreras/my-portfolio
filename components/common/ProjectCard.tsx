@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
+import useProject from "@/hooks/useProject";
 import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Skeleton from "./Skeleton";
 
 type Project = {
   id: number;
@@ -16,17 +19,15 @@ type Project = {
   githubUrl: string;
 };
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const ProjectCard = () => {
+  const { project, loading } = useProject() as {
+    project: Project[];
+    loading: boolean;
+  };
 
-const ProjectCard = async () => {
-  const response = await fetch(`${API_URL}`);
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch projects");
+  if (loading) {
+    return <Skeleton />;
   }
-  const project: Project[] = await response.json();
-
-  console.log(project);
 
   return (
     <motion.div
