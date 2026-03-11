@@ -10,7 +10,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const page = () => {
   return (
-    <div className="bg-base-100 justify-center items-center min-h-screen relative gap-y-12">
+    <div className="bg-base-100 justify-center items-center min-h-screen relative gap-y-12 ">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
@@ -28,14 +28,18 @@ const page = () => {
         <HomeSectionLarge />
       </div>
 
-      {/* About */}
-      <div className="justify-center items-center max-w-7xl mx-auto">
-        <AboutSectionLarge />
-      </div>
+      <div className="divider divider-neutral w-full"></div>
 
       {/* Projects */}
       <div className="justify-center items-center max-w-7xl mx-auto">
         <ProjectSectionLarge />
+      </div>
+
+      <div className="divider divider-neutral w-full"></div>
+
+      {/* About */}
+      <div className="justify-center items-center max-w-7xl mx-auto">
+        <AboutSectionLarge />
       </div>
 
       {/* Skills */}

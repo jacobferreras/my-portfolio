@@ -46,7 +46,7 @@ const HomeSectionLarge = () => {
             <motion.button
               className="btn rounded-lg bg-[#454545] w-full md:w-auto font-sans font-bold text-white hover:bg-[#333333] transition-colors duration-300"
               onClick={() => {
-                const projectSection = document.getElementById("contact");
+                const projectSection = document.getElementById("project");
                 if (projectSection) {
                   projectSection.scrollIntoView({ behavior: "smooth" });
                 }

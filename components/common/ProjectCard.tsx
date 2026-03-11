@@ -40,7 +40,7 @@ const ProjectCard = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="card bg-base-200 w-auto xl:w-100 mb-4 shadow-md shadow-blue-500/50 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+          className="card bg-base-200 w-auto xl:w-100 mb-4 shadow-md shadow-gray-600/50 hover:shadow-xl transition-shadow duration-300 ease-in-out"
           key={projects.id ?? index}
         >
           <figure>
