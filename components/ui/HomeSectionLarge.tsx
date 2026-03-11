@@ -72,7 +72,7 @@ const HomeSectionLarge = () => {
             <motion.img
               src="/Jacob.png"
               alt="My Picture"
-              className="max-w-auto h-98 md:h-auto md:w-full rounded-lg border-accent-content mb-4"
+              className="max-w-auto h-98 md:h-auto md:w-full lg:h-106 rounded-lg border-accent-content mb-4"
             />
           </div>
           <div className="flex flex-row gap-x-4 justify-center items-center ">
