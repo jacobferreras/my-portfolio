@@ -9,7 +9,7 @@ const HomeSectionLarge = () => {
       {/* Home */}
       <motion.section
         id="home"
-        className="flex flex-col lg:flex-row justify-center items-center z-10 min-h-screen relative gap-4"
+        className="flex flex-col lg:flex-row justify-center items-center z-10 min-h-screen relative gap-4 px-8"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
@@ -33,7 +33,7 @@ const HomeSectionLarge = () => {
           </motion.h1>
 
           <motion.h2
-            className="text-lg md:text-xl  font-serif  font-normal text-center mb-4"
+            className="text-lg md:text-xl  font-serif  font-normal text-center lg:text-start mb-4"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}

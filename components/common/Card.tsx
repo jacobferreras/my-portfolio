@@ -16,8 +16,8 @@ const Card = (props: CardProps) => {
           {props.icon && <i className={`${props.icon} text-2xl`}></i>}
           <h2 className="card-title font-bold text-xl">{props.title}</h2>
         </div>
-        <p className="font-bold text-md">{props.description}</p>
-        <p>{props.firstInfo}</p>
+        <p className="font-bold text-xl">{props.description}</p>
+        <p className="text-lg">{props.firstInfo}</p>
         <p>{props.secondInfo}</p>
       </div>
     </div>

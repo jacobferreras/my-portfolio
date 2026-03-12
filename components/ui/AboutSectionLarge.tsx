@@ -9,22 +9,31 @@ const AboutSectionLarge = () => {
     <div>
       <motion.section
         id="about"
-        className="flex flex-col lg:gap-4 px-4 py-18 lg:justify-center min-h-screen lg:items-center z-10 relative lg:flex-row xl:gap-34 "
+        className="flex flex-col justify-center min-h-screen items-center z-10 relative gap-12 px-8 mt-8 lg:mt-0 lg:flex-row"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
         <div className="flex flex-col">
           <motion.h1
-            className="text-4xl text-base-content font-bold underline decoration-blue-600 decoration-4 flex mb-4"
-            initial={{ opacity: 0, y: -100 }}
+            className="text-lg font-medium text-base-content tracking-widest uppercase mb-4 text-center lg:text-start"
+            initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
             About Me
           </motion.h1>
 
+          <motion.h1
+            className="text-xl md:text-3xl font-bold text-base-content tracking-widest uppercase mb-4 font-serif italic text-center lg:text-start"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Driven by Passion. Built with Precision.
+          </motion.h1>
+
           <motion.p
-            className="text-lg text-base-content mt-4 max-w-2xl xl:max-w-4xl text-justify font-normal"
+            className="text-lg mt-4  font-serif  leading-relaxed text-gray-300 text-center lg:text-start lg:max-w-4xl"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -36,86 +45,81 @@ const AboutSectionLarge = () => {
             tools and frameworks, and I am always eager to take on new
             challenges that help me grow as a developer.
           </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
+
+          <motion.p
+            className="text-lg mt-4 font-serif leading-relaxed text-gray-300 text-center lg:text-start lg:max-w-4xl"
+            initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="flex flex-col md:flex-row gap-4 mt-4"
           >
-            <motion.div>
-              <Card
-                icon="bi bi-mortarboard"
-                title="Education"
-                description="Bachelor of Science in Computer Science"
-                firstInfo="STI San Jose Del Monte Bulacan"
-                secondInfo="2021 - 2025"
-              />
-            </motion.div>
-            <motion.div>
-              <Card
-                icon="bi bi-briefcase"
-                title="Experience"
-                description="Full Stack Developer Intern"
-                firstInfo="Philippine Coast Guard WCEISC"
-                secondInfo="March 2025 - May 2025"
-              />
-            </motion.div>
-          </motion.div>
+            Outside of coding, I’m passionate about gaming and basketball.
+            Gaming keeps me engaged with strategy, teamwork, and
+            problem-solving, while basketball helps me stay active and
+            disciplined. Both hobbies have taught me valuable skills like focus,
+            adaptability, and collaboration—qualities that I also bring into my
+            work as a developer.
+          </motion.p>
         </div>
 
-        <div className="flex flex-col justify-center items-center lg:pt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
+            className="flex justify-center"
           >
-            <img
-              src="/Second_picture.png"
-              alt="my second picture"
-              className="w-full h-76 md:w-auto lg:h-60"
+            <Card
+              icon="bi bi-code-slash"
+              title="Experience"
+              description="2+ Years"
+              firstInfo=" Full Stack Development"
             />
           </motion.div>
 
-          <div className="flex flex-row gap-4 my-4">
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="badge badge-outline"
-            >
-              Developer
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="badge badge-outline"
-            >
-              Gamer
-            </motion.div>
-          </div>
-
-          <Link
-            href="/Rhobel Jacob Ferreras.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pb-6"
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn bg-blue-600 text-base-content"
-              >
-                Download Resume
-                <i className="bi bi-box-arrow-down text-xl hover:text-blue-500"></i>
-              </motion.button>
-            </motion.div>
-          </Link>
+            <Card
+              icon="bi bi-geo-alt"
+              title="Location"
+              description="Philippines"
+              firstInfo=""
+              secondInfo=""
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
+          >
+            <Card
+              icon="bi bi-mortarboard"
+              title="Education"
+              description="BS Computer Science"
+              firstInfo=""
+              secondInfo=""
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
+          >
+            <Card
+              icon="bi bi-lightning"
+              title="Philosophy"
+              description="Clean Code"
+              firstInfo=""
+              secondInfo=""
+            />
+          </motion.div>
         </div>
       </motion.section>
     </div>
