@@ -54,8 +54,10 @@ const ProjectCard = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{projects.title}</h2>
-            <p>{projects.description}</p>
+            <h2 className="card-title text-xl font-bold">{projects.title}</h2>
+            <p className="text-gray-300 text-sm leading-relaxed font-serif line-clamp-3">
+              {projects.description}
+            </p>
             <div className="card-actions justify-start">
               {projects.technology1 && (
                 <div className="badge badge-neutral">

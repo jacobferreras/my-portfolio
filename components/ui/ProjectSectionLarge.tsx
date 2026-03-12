@@ -12,7 +12,7 @@ const ProjectSectionLarge = () => {
       >
         <div className="flex flex-col">
           <motion.h1
-            className="text-xl text-base-content font-serif font-light mb-4 text-center"
+            className="text-xl font-medium text-base-content tracking-widest uppercase mb-4 text-center"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -21,7 +21,7 @@ const ProjectSectionLarge = () => {
           </motion.h1>
 
           <motion.h1
-            className="text-4xl text-base-content font-serif font-bold mb-4 text-center"
+            className="text-4xl text-base-content font-serif italic font-bold mb-4 text-center"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -30,7 +30,7 @@ const ProjectSectionLarge = () => {
           </motion.h1>
 
           <motion.h2
-            className="text-md md:text-lg lg:text-xl text-base-content font-serif font-light mb-8 text-center lg:max-w-4xl mx-auto "
+            className="text-md md:text-lg lg:text-xl  font-serif  text-gray-300 mb-8 text-center lg:max-w-4xl mx-auto "
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}

@@ -15,7 +15,7 @@ const HomeSectionLarge = () => {
       >
         <div className="flex flex-col px-4 xl:mr-4 md:mt-8">
           <motion.h2
-            className="text-[#a3a3a3] text-xl font-serif font-bold text-center mb-4 lg:text-start"
+            className="text-[#a3a3a3] text-xl font-serif font-bold italic text-center mb-2 lg:text-start"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -24,7 +24,7 @@ const HomeSectionLarge = () => {
           </motion.h2>
 
           <motion.h1
-            className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl text-[#fafafa] font-bold text-center mb-4 lg:text-start"
+            className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl text-[#fafafa] font-bold font-serif tracking-tight text-center mb-4 lg:text-start"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -33,7 +33,7 @@ const HomeSectionLarge = () => {
           </motion.h1>
 
           <motion.h2
-            className="text-lg md:text-xl  font-inter font-extralight text-center mb-4"
+            className="text-lg md:text-xl  font-serif  font-normal text-center mb-4"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -44,7 +44,7 @@ const HomeSectionLarge = () => {
 
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-4 lg:justify-start">
             <motion.button
-              className="btn rounded-lg bg-[#454545] w-full md:w-auto font-sans font-bold text-white hover:bg-[#333333] transition-colors duration-300"
+              className="btn rounded-lg bg-[#454545] w-full md:w-auto font-serif font-bold text-white hover:bg-[#333333] transition-colors duration-300 text-sm"
               onClick={() => {
                 const projectSection = document.getElementById("project");
                 if (projectSection) {
@@ -60,7 +60,7 @@ const HomeSectionLarge = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <motion.button className="btn-ghost rounded-lg  w-full md:w-auto">
+              <motion.button className="btn-ghost rounded-lg font-serif font-bold w-full text-sm md:w-auto ">
                 Download Resume
               </motion.button>
             </Link>
