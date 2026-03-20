@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Card from "@/components/common/Card";
-import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const AboutSectionLarge = () => {
@@ -86,7 +85,7 @@ const AboutSectionLarge = () => {
               icon="bi bi-geo-alt"
               title="Location"
               description="Philippines"
-              firstInfo=""
+              firstInfo="Makati City"
               secondInfo=""
             />
           </motion.div>
@@ -101,7 +100,7 @@ const AboutSectionLarge = () => {
               icon="bi bi-mortarboard"
               title="Education"
               description="BS Computer Science"
-              firstInfo=""
+              firstInfo="STI College of San Jose Del Monte"
               secondInfo=""
             />
           </motion.div>
@@ -116,7 +115,7 @@ const AboutSectionLarge = () => {
               icon="bi bi-lightning"
               title="Philosophy"
               description="Clean Code"
-              firstInfo=""
+              firstInfo="Scalable Architecture"
               secondInfo=""
             />
           </motion.div>

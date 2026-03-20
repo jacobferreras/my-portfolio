@@ -42,6 +42,8 @@ const page = () => {
         <AboutSectionLarge />
       </div>
 
+      <div className="divider divider-neutral w-full"></div>
+
       {/* Skills */}
       <div className="justify-center items-center max-w-7xl mx-auto">
         <SkillsSectionLarge />
